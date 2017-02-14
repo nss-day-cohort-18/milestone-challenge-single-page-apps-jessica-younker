@@ -26,4 +26,9 @@ function populatePage () {
 		let html = templateScript(context);
 		row.append(html);		
 	}
+
+	CarLot.activateEvents();
+	CarLot.clearStyles();
 };
+
+
