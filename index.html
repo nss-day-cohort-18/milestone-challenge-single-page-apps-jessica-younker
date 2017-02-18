@@ -11,7 +11,8 @@
 	<header>
 		<form class="navbar-form navbar-left" role="search">
 		  <div class="form-group">
-		    <input type="text" id="text" class="form-control" placeholder="Search">
+		    <textarea type="textarea" class="form-control" placeholder="Click card to edit description here"></textarea>
+		    <button type="button" class="submit">Submit Edit</button> 
 		  </div>
 		</form>
 	</header>
@@ -20,11 +21,12 @@
 		<div class="col-md-4">
 			<article class="card">
 				<div class="text">
+						<img class="image" src="{{image}}"> </br>
 						Make: {{make}} </br>
 						Model: {{model}} </br>
 						Year: {{year}} </br>
 						Price: {{price}} </br>
-						Description: {{description}} </br>
+						Description: <span class="editMe">{{description}}</span> </br>
 				</div>	
 			</article>
 		</div>	

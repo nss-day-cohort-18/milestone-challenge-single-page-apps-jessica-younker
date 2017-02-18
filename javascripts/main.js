@@ -4,11 +4,12 @@ CarLot.loadInventory(populatePage);
 
 function populatePage () {
 	var inventory = CarLot.getInventory();
-	var area = document.getElementById("card-area");
-	var carCard;
+	// var area = document.getElementById("card-area");
+	// var carCard;
 	for (var i = 0; i < inventory.length; i++){
-		let context = 
-			{"make": inventory[i].make,
+		let context = {
+			"image": inventory[i].image,
+			"make": inventory[i].make,
 			"model": inventory[i].model,
 			"year": inventory[i].year,
 			"price": inventory[i].price,
